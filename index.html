@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Aula 1 - RBM</title>
+</head>
+
+<body>
+    *O valor default de todos os campos é 0
+<div class="container">
+    <div class="soma">
+        <h2>Digite os dois números que serão somados</h2>
+        <input id="soma1" type="number" placeholder="Primeiro Numero" />
+        <input id="soma2" type="number" placeholder="Segundo Numero" />
+        <button onclick="somar(Number(document.getElementById('soma1').value),Number(document.getElementById('soma2').value))">SOMA</button>
+    </div>
+
+    <div class="media">
+        <h2>Digite 5 números para calcular a média</h2>
+        <input id="media1" type="number" placeholder="Primeiro Numero" />
+        <input id="media2" type="number" placeholder="Segundo Numero" />
+        <input id="media3" type="number" placeholder="Terceiro Numero" />
+        <input id="media4" type="number" placeholder="Quarto Numero" />
+        <input id="media5" type="number" placeholder="Quinto Numero" />
+        <button onclick="media(Number(document.getElementById('media1').value),Number(document.getElementById('media2').value),Number(document.getElementById('media3').value),Number(document.getElementById('media4').value),Number(document.getElementById('media5').value))">MEDIA</button>
+    </div>
+
+    <div class="imc">
+        <h2>Digite o peso e altura para calcular o IMC</h2>
+        <input id="peso" type="number" placeholder="Peso" />
+        <input id="altura" type="number" placeholder="Altura" />
+        <button onclick="imc(Number(document.getElementById('peso').value),Number(document.getElementById('altura').value))">IMC</button>
+    </div>
+    <script src="./funcoes.js"></script>
+</div>
+</body>
+
+</html>
